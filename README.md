@@ -1,0 +1,1 @@
+# platform-helm-chart-metacontroller-operator-loki-rule-group
