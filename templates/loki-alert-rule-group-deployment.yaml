@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: loki-alert-rule-group-controller
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{ .Values.loki-alert-group-controller.replicaCount }}
   selector:
     matchLabels:
       app: loki-alert-rule-group-controller
@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
       - name: loki-alert-rule-group-controller
-        image: ghcr.io/glueops/metacontroller-operator-loki-rule-group:{{ .Values.image.tag}}
-        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        image: ghcr.io/glueops/metacontroller-operator-loki-rule-group:{{ .Values.loki-alert-group-controller.image.tag}}
+        imagePullPolicy: {{ .Values.loki-alert-group-controller.image.pullPolicy }}
         env:
         - name: LOKI_GATEWAY_URL
-          value: {{ .Values.image.lokiGatewayUrl }}
+          value: {{ .Values.loki-alert-group-controller.image.lokiGatewayUrl }}
         ports:
         - containerPort: 80
 ---
