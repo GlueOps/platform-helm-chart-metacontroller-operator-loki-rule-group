@@ -3,4 +3,4 @@ appVersion: v0.1.0-alpha8
 description: GlueOps Helm Chart to deploy the GlueOps Loki Rule Group Controller
 name: platform-helm-chart-metacontroller-operator-loki-rule-group
 
-version: 0.1.0-alpha6
+version: 0.1.0-alpha7
