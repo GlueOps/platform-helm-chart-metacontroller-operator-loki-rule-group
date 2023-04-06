@@ -16,6 +16,9 @@ spec:
       - name: loki-alert-rule-group-controller
         image: ghcr.io/glueops/metacontroller-operator-loki-rule-group:{{ .Values.image.tag}}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
+        env:
+        - name: LOKI_GATEWAY_URL
+          value: {{ .Values.image.lokiGatewayUrl }}
         ports:
         - containerPort: 80
 ---

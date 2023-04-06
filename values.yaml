@@ -2,4 +2,5 @@ replicaCount: 1
 
 image:
   pullPolicy: Always
-  tag: v0.1.0-alpha7
+  tag: v0.1.0-alpha8
+  lokiGatewayUrl: 'http://loki-gateway.glueops-core-loki.svc.cluster.local'
