@@ -1,3 +1,4 @@
+appName: loki-alert-rule-group-controller
 replicaCount: 1
 image:
   pullPolicy: nil
