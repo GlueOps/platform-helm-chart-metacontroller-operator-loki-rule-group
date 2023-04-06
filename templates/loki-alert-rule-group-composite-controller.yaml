@@ -1,7 +1,7 @@
 apiVersion: metacontroller.k8s.io/v1alpha1
 kind: CompositeController
 metadata:
-  name: loki-alert-rule-group-controller
+  name: {{ .Values.appName }}
 spec:
   generateSelector: true
   parentResource:
@@ -15,7 +15,7 @@ spec:
   hooks:
     sync:
       webhook:
-        url: http://loki-alert-rule-group-controller.glueops-core-loki-alert-group-controller
+        url: http://{{ .Values.appName }}.{{ .Values.appNamespace }}
     finalize:
       webhook:
-        url: http://loki-alert-rule-group-controller.glueops-core-loki-alert-group-controller/finalize
+        url: http://{{ .Values.appName }}.{{ .Values.appNamespace }}/finalize
