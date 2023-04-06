@@ -15,7 +15,7 @@ spec:
   hooks:
     sync:
       webhook:
-        url: http://loki-alert-rule-group-controller.controller-loki-rule-groups
+        url: http://loki-alert-rule-group-controller.glueops-core-loki-alert-group-controller
     finalize:
       webhook:
-        url: http://loki-alert-rule-group-controller.controller-loki-rule-groups/finalize
+        url: http://loki-alert-rule-group-controller.glueops-core-loki-alert-group-controller/finalize
