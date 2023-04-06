@@ -1,7 +1,7 @@
 apiVersion: metacontroller.k8s.io/v1alpha1
 kind: CompositeController
 metadata:
-  name: {{ .Values.appName }}
+  name: {{ .Release.Name }}
 spec:
   generateSelector: true
   parentResource:
@@ -15,7 +15,7 @@ spec:
   hooks:
     sync:
       webhook:
-        url: http://{{ .Values.appName }}.{{ .Values.appNamespace }}
+        url: http://{{ .Release.Name }}.{{ .Values.appNamespace }}
     finalize:
       webhook:
-        url: http://{{ .Values.appName }}.{{ .Values.appNamespace }}/finalize
+        url: http://{{ .Release.Name }}.{{ .Values.appNamespace }}/finalize
