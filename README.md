@@ -1,6 +1,6 @@
-# loki-alert-rule-group-controller
+# platform-helm-chart-metacontroller-operator-loki-alert-rule-group-controller
 
-![Version: 0.1.0-alpha10](https://img.shields.io/badge/Version-0.1.0--alpha10-informational?style=flat-square) ![AppVersion: v0.1.0-alpha8](https://img.shields.io/badge/AppVersion-v0.1.0--alpha8-informational?style=flat-square)
+![Version: 0.1.0-alpha11](https://img.shields.io/badge/Version-0.1.0--alpha11-informational?style=flat-square) ![AppVersion: v0.1.0-alpha8](https://img.shields.io/badge/AppVersion-v0.1.0--alpha8-informational?style=flat-square)
 
 GlueOps Helm Chart to deploy the GlueOps Loki Rule Group Controller
 
@@ -8,6 +8,7 @@ GlueOps Helm Chart to deploy the GlueOps Loki Rule Group Controller
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| appName | string | `"loki-alert-rule-group-controller"` |  |
 | image.lokiGatewayUrl | string | `"nil"` |  |
 | image.pullPolicy | string | `"nil"` |  |
 | replicaCount | int | `1` |  |
