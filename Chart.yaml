@@ -1,6 +1,8 @@
 apiVersion: v2
-appVersion: v0.1.0-alpha8
+name: loki-alert-rule-group-controller
 description: GlueOps Helm Chart to deploy the GlueOps Loki Rule Group Controller
+
+appVersion: v0.1.0-alpha8
 name: platform-helm-chart-metacontroller-operator-loki-rule-group
 
-version: 0.1.0-alpha8
+version: 0.1.0-alpha9

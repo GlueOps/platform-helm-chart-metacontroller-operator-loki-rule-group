@@ -1,6 +1,4 @@
-loki-alert-group-controller:
-  replicaCount: 1
-  image:
-    pullPolicy: nil
-    tag: nil
-    lokiGatewayUrl: nil
+replicaCount: 1
+image:
+  pullPolicy: nil
+  lokiGatewayUrl: nil
