@@ -15,7 +15,7 @@ spec:
   hooks:
     sync:
       webhook:
-        url: http://{{ .Release.Name }}.{{ .Values.appNamespace }}
+        url: http://{{ .Release.Name }}.{{ .Values.appNamespace }}.svc.cluster.local
     finalize:
       webhook:
-        url: http://{{ .Release.Name }}.{{ .Values.appNamespace }}/finalize
+        url: http://{{ .Release.Name }}.{{ .Values.appNamespace }}.svc.cluster.local/finalize
