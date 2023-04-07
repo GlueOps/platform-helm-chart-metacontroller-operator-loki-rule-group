@@ -1,5 +1,5 @@
 appNamespace: nil
-replicaCount: 2
+replicaCount: '2'
 image:
   pullPolicy: Always
   lokiGatewayUrl: nil
