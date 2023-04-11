@@ -43,7 +43,10 @@ spec:
           status:
             type: object
             properties:
-              synced:
-                type: boolean
+              health:
+                type: object
+                properties:
+                  status:
+                    type: string
     subresources:
      status: {}
