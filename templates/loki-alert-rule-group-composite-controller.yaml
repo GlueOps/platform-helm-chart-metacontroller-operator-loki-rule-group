@@ -12,6 +12,8 @@ spec:
       resource: configmaps
       updateStrategy:
         method: InPlace
+  resyncPeriodSeconds: 30
+
   hooks:
     sync:
       webhook:
