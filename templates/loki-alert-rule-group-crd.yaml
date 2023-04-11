@@ -40,5 +40,10 @@ spec:
                       type: object
                       additionalProperties:
                         type: string
+          status:
+            type: object
+            properties:
+              synced:
+                type: string
     subresources:
      status: {}
