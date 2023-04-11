@@ -44,6 +44,6 @@ spec:
             type: object
             properties:
               synced:
-                type: string
+                type: boolean
     subresources:
      status: {}
