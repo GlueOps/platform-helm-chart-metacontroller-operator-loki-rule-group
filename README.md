@@ -1,6 +1,6 @@
 # platform-helm-chart-metacontroller-operator-loki-rule-group
 
-![Version: 0.1.0-antonio-beta15](https://img.shields.io/badge/Version-0.1.0--antonio--beta15-informational?style=flat-square) ![AppVersion: v0.2.0-alpha7](https://img.shields.io/badge/AppVersion-v0.2.0--alpha7-informational?style=flat-square)
+![Version: 0.1.0-antonio-beta16](https://img.shields.io/badge/Version-0.1.0--antonio--beta16-informational?style=flat-square) ![AppVersion: v0.2.0-alpha8](https://img.shields.io/badge/AppVersion-v0.2.0--alpha8-informational?style=flat-square)
 
 GlueOps Helm Chart to deploy the GlueOps Loki Rule Group Controller
 
