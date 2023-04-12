@@ -1,0 +1,5 @@
+appNamespace: nil
+replicaCount: '2'
+image:
+  pullPolicy: Always
+  lokiGatewayUrl: nil

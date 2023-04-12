@@ -1,0 +1,23 @@
+apiVersion: metacontroller.k8s.io/v1alpha1
+kind: CompositeController
+metadata:
+  name: {{ .Release.Name }}
+spec:
+  generateSelector: true
+  parentResource:
+    apiVersion: metacontroller.glueops.dev/v1alpha1
+    resource: lokialertrulegroups
+  childResources:
+    - apiVersion: v1
+      resource: configmaps
+      updateStrategy:
+        method: InPlace
+  resyncPeriodSeconds: 30
+
+  hooks:
+    sync:
+      webhook:
+        url: http://{{ .Release.Name }}.{{ .Values.appNamespace }}.svc.cluster.local
+    finalize:
+      webhook:
+        url: http://{{ .Release.Name }}.{{ .Values.appNamespace }}.svc.cluster.local/finalize
