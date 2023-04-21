@@ -32,6 +32,8 @@ spec:
                       type: string
                     expr:
                       type: string
+                    for:
+                      type: string
                     labels:
                       type: object
                       additionalProperties:
