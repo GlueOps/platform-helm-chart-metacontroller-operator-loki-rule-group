@@ -17,8 +17,10 @@ spec:
         image: ghcr.io/glueops/metacontroller-operator-loki-rule-group:{{ .Chart.AppVersion }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         env:
-        - name: LOKI_GATEWAY_URL
-          value: {{ .Values.image.lokiGatewayUrl }}
+        - name: LOKI_BACKEND_URL
+          value: {{ .Values.image.lokiBackendUrl }}
+        - name: LOKI_BACKEND_PORT
+          value: {{ .Values.image.lokiBackendPort }}
         ports:
         - containerPort: 80
 ---
