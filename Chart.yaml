@@ -4,4 +4,4 @@ description: GlueOps Helm Chart to deploy the GlueOps Loki Rule Group Controller
 
 appVersion: v0.2.3
 
-version: 0.1.0-antonio-alpha1
+version: 0.3.0-antonio-alpha1
