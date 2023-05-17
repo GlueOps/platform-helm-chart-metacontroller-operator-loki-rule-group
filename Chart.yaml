@@ -1,7 +1,7 @@
 apiVersion: v2
-name: platform-helm-chart-metacontroller-operator-loki-rule-group
+name: glueops-metacontroller-operator-loki-rule-group
 description: GlueOps Helm Chart to deploy the GlueOps Loki Rule Group Controller
 
 appVersion: v0.2.3
 
-version: 0.2.2
+version: 0.1.0-antonio-alpha1
